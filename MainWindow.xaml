@@ -5,8 +5,45 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TecladoEGP"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" Background="#FF072F2A">
     <Grid>
+        <Grid ShowGridLines="true">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
 
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Button Content="Esc" Margin="8,10" Background="#FF148886"/>
+            <TextBlock x:Name="tbText" Grid.Column="1" Grid.ColumnSpan="10" Margin="8,10" Foreground="Black" Background="#FF046556"/>
+            <Button Content="Q" Margin="8,10" Background="#FF148886" Grid.Column="0" Grid.Row="1"/>
+            <Button Content="W" Margin="8,10" Background="#FF148886" Grid.Column="1" Grid.Row="1"/>
+            <Button Content="E" Margin="8,10" Background="#FF148886" Grid.Column="2" Grid.Row="1"/>
+            <Button Content="R" Margin="8,10" Background="#FF148886" Grid.Column="3" Grid.Row="1"/>
+            <Button Content="T" Margin="8,10" Background="#FF148886" Grid.Column="4" Grid.Row="1"/>
+            <Button Content="Y" Margin="8,10" Background="#FF148886" Grid.Column="5" Grid.Row="1"/>
+            <Button Content="U" Margin="8,10" Background="#FF148886" Grid.Column="6" Grid.Row="1"/>
+            <Button Content="I" Margin="8,10" Background="#FF148886" Grid.Column="7" Grid.Row="1"/>
+            <Button Content="O" Margin="8,10" Background="#FF148886" Grid.Column="8" Grid.Row="1"/>
+            <Button Content="P" Margin="8,10" Background="#FF148886" Grid.Column="9" Grid.Row="1"/>
+            
+            
+        </Grid>
     </Grid>
 </Window>
