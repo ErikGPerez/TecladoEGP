@@ -30,8 +30,10 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
 
+            <!-- Fila 1 -->
             <Button Content="Esc" Margin="8,10" Background="#FF148886"/>
             <TextBlock x:Name="tbText" Grid.Column="1" Grid.ColumnSpan="10" Margin="8,10" Foreground="Black" Background="#FF046556"/>
+            <!-- Fila 2 -->
             <Button Content="Q" Margin="8,10" Background="#FF148886" Grid.Column="0" Grid.Row="1"/>
             <Button Content="W" Margin="8,10" Background="#FF148886" Grid.Column="1" Grid.Row="1"/>
             <Button Content="E" Margin="8,10" Background="#FF148886" Grid.Column="2" Grid.Row="1"/>
@@ -42,8 +44,24 @@
             <Button Content="I" Margin="8,10" Background="#FF148886" Grid.Column="7" Grid.Row="1"/>
             <Button Content="O" Margin="8,10" Background="#FF148886" Grid.Column="8" Grid.Row="1"/>
             <Button Content="P" Margin="8,10" Background="#FF148886" Grid.Column="9" Grid.Row="1"/>
-            
-            
+            <Button Content=" ↲" Margin="8,10" Background="#FF148886" Grid.Column="10" Grid.Row="1"/>
+            <!-- Fila 3 -->
+            <Button Content="A" Margin="8,10" Background="#FF148886" Grid.Column="0" Grid.Row="2"/>
+            <Button Content="S" Margin="8,10" Background="#FF148886" Grid.Column="1" Grid.Row="2"/>
+            <Button Content="D" Margin="8,10" Background="#FF148886" Grid.Column="2" Grid.Row="2"/>
+            <Button Content="F" Margin="8,10" Background="#FF148886" Grid.Column="3" Grid.Row="2"/>
+            <Button Content="G" Margin="8,10" Background="#FF148886" Grid.Column="4" Grid.Row="2"/>
+            <Button Content="H" Margin="8,10" Background="#FF148886" Grid.Column="5" Grid.Row="2"/>
+            <Button Content="J" Margin="8,10" Background="#FF148886" Grid.Column="6" Grid.Row="2"/>
+            <Button Content="K" Margin="8,10" Background="#FF148886" Grid.Column="7" Grid.Row="2"/>
+            <Button Content="L" Margin="8,10" Background="#FF148886" Grid.Column="8" Grid.Row="2"/>
+            <Button Content="P" Margin="8,10" Background="#FF148886" Grid.Column="9" Grid.Row="2"/>
+            <Button Content="⌫" FontSize="20" Margin="8,10" Background="#FF148886" Grid.Column="10" Grid.Row="1"/>
+            <!-- Fila 4 -->
+
+            <!-- Fila 5 -->
+
+
         </Grid>
     </Grid>
 </Window>
