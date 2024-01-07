@@ -6,8 +6,9 @@
         xmlns:local="clr-namespace:TecladoEGP"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" Background="#FF072F2A">
+    
     <Grid>
-        <Grid ShowGridLines="true">
+        <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
@@ -31,38 +32,53 @@
             </Grid.RowDefinitions>
 
             <!-- Fila 1 -->
-            <Button Content="Esc" Margin="8,10" Background="#FF148886"/>
-            <TextBlock x:Name="tbText" Grid.Column="1" Grid.ColumnSpan="10" Margin="8,10" Foreground="Black" Background="#FF046556"/>
+            <Button x:Name="bEsc" Content="Esc" Margin="8,10" Background="#FF148886"/>
+            <TextBlock x:Name="tbmText" TextWrapping="Wrap" Grid.Column="1" Grid.ColumnSpan="10" Margin="8,10" Foreground="Black" Background="#FF046556" IsEnabled="False"/>
+
             <!-- Fila 2 -->
-            <Button Content="Q" Margin="8,10" Background="#FF148886" Grid.Column="0" Grid.Row="1"/>
-            <Button Content="W" Margin="8,10" Background="#FF148886" Grid.Column="1" Grid.Row="1"/>
-            <Button Content="E" Margin="8,10" Background="#FF148886" Grid.Column="2" Grid.Row="1"/>
-            <Button Content="R" Margin="8,10" Background="#FF148886" Grid.Column="3" Grid.Row="1"/>
-            <Button Content="T" Margin="8,10" Background="#FF148886" Grid.Column="4" Grid.Row="1"/>
-            <Button Content="Y" Margin="8,10" Background="#FF148886" Grid.Column="5" Grid.Row="1"/>
-            <Button Content="U" Margin="8,10" Background="#FF148886" Grid.Column="6" Grid.Row="1"/>
-            <Button Content="I" Margin="8,10" Background="#FF148886" Grid.Column="7" Grid.Row="1"/>
-            <Button Content="O" Margin="8,10" Background="#FF148886" Grid.Column="8" Grid.Row="1"/>
-            <Button Content="P" Margin="8,10" Background="#FF148886" Grid.Column="9" Grid.Row="1"/>
-            <Button Content="⌫" FontSize="20" Margin="8,10" Background="#FF148886" Grid.Column="10" Grid.Row="1"/>
-            
+            <Button x:Name="bQ" Content="q" Margin="8,10" Background="#FF148886" Grid.Column="0" Grid.Row="1" Click="bLetterClick"/>
+            <Button x:Name="bW" Content="w" Margin="8,10" Background="#FF148886" Grid.Column="1" Grid.Row="1" Click="bLetterClick"/>
+            <Button x:Name="bE" Content="e" Margin="8,10" Background="#FF148886" Grid.Column="2" Grid.Row="1" Click="bLetterClick"/>
+            <Button x:Name="bR" Content="r" Margin="8,10" Background="#FF148886" Grid.Column="3" Grid.Row="1" Click="bLetterClick"/>
+            <Button x:Name="bT" Content="t" Margin="8,10" Background="#FF148886" Grid.Column="4" Grid.Row="1" Click="bLetterClick"/>
+            <Button x:Name="bY" Content="y" Margin="8,10" Background="#FF148886" Grid.Column="5" Grid.Row="1" Click="bLetterClick"/>
+            <Button x:Name="bU" Content="u" Margin="8,10" Background="#FF148886" Grid.Column="6" Grid.Row="1" Click="bLetterClick"/>
+            <Button x:Name="bI" Content="i" Margin="8,10" Background="#FF148886" Grid.Column="7" Grid.Row="1" Click="bLetterClick"/>
+            <Button x:Name="bO" Content="o" Margin="8,10" Background="#FF148886" Grid.Column="8" Grid.Row="1" Click="bLetterClick"/>
+            <Button x:Name="bP" Content="p" Margin="8,10" Background="#FF148886" Grid.Column="9" Grid.Row="1" Click="bLetterClick"/>
+            <Button x:Name="bRemove" Content="⌫" FontSize="20" Margin="8,10" Background="#FF148886" Grid.Column="10" Grid.Row="1" Click="bErase_Click"/>
+
             <!-- Fila 3 -->
-            <Button Content="A" Margin="8,10" Background="#FF148886" Grid.Column="0" Grid.Row="2"/>
-            <Button Content="S" Margin="8,10" Background="#FF148886" Grid.Column="1" Grid.Row="2"/>
-            <Button Content="D" Margin="8,10" Background="#FF148886" Grid.Column="2" Grid.Row="2"/>
-            <Button Content="F" Margin="8,10" Background="#FF148886" Grid.Column="3" Grid.Row="2"/>
-            <Button Content="G" Margin="8,10" Background="#FF148886" Grid.Column="4" Grid.Row="2"/>
-            <Button Content="H" Margin="8,10" Background="#FF148886" Grid.Column="5" Grid.Row="2"/>
-            <Button Content="J" Margin="8,10" Background="#FF148886" Grid.Column="6" Grid.Row="2"/>
-            <Button Content="K" Margin="8,10" Background="#FF148886" Grid.Column="7" Grid.Row="2"/>
-            <Button Content="L" Margin="8,10" Background="#FF148886" Grid.Column="8" Grid.Row="2"/>
-            <Button Content="↲" Margin="8,10" Background="#FF148886" Grid.Column="9" Grid.Row="2"/>
-            
+            <Button x:Name="bA" Content="a" Margin="8,10,0,10" Background="#FF148886" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Left" Width="57" Click="bLetterClick"/>
+            <Button x:Name="bS" Content="s" Margin="8,10" Background="#FF148886" Grid.Column="1" Grid.Row="2" Click="bLetterClick"/>
+            <Button x:Name="bD" Content="d" Margin="8,10" Background="#FF148886" Grid.Column="2" Grid.Row="2" Click="bLetterClick"/>
+            <Button x:Name="bF" Content="f" Margin="8,10" Background="#FF148886" Grid.Column="3" Grid.Row="2" Click="bLetterClick"/>
+            <Button x:Name="bG" Content="g" Margin="8,10" Background="#FF148886" Grid.Column="4" Grid.Row="2" Click="bLetterClick"/>
+            <Button x:Name="bH" Content="h" Margin="8,10" Background="#FF148886" Grid.Column="5" Grid.Row="2" Click="bLetterClick"/>
+            <Button x:Name="bJ" Content="j" Margin="8,10" Background="#FF148886" Grid.Column="6" Grid.Row="2" Click="bLetterClick"/>
+            <Button x:Name="bK" Content="k" Margin="8,10" Background="#FF148886" Grid.Column="7" Grid.Row="2" Click="bLetterClick"/>
+            <Button x:Name="bL" Content="l" Margin="8,10" Background="#FF148886" Grid.Column="8" Grid.Row="2" Click="bLetterClick"/>
+            <Button x:Name="bReturn" Content="Return ↲" Margin="8,10,8,10" Background="#FF148886" Grid.Column="9" Grid.Row="2" Grid.ColumnSpan="2" Click="bReturn_Click"/>
+
             <!-- Fila 4 -->
+            <Button x:Name="bShift" Content="⇧" Margin="8,10" Background="#FF148886" Grid.Column="0" Grid.Row="3" Click="bShift_Click"/>
+            <Button x:Name="bZ" Content="z" Margin="8,10" Background="#FF148886" Grid.Column="1" Grid.Row="3" Click="bLetterClick"/>
+            <Button x:Name="bX" Content="x" Margin="8,10" Background="#FF148886" Grid.Column="2" Grid.Row="3" Click="bLetterClick"/>
+            <Button x:Name="bC" Content="c" Margin="8,10" Background="#FF148886" Grid.Column="3" Grid.Row="3" Click="bLetterClick"/>
+            <Button x:Name="bV" Content="v" Margin="8,10" Background="#FF148886" Grid.Column="4" Grid.Row="3" Click="bLetterClick"/>
+            <Button x:Name="bB" Content="b" Margin="8,10" Background="#FF148886" Grid.Column="5" Grid.Row="3" Click="bLetterClick"/>
+            <Button x:Name="bN" Content="n" Margin="8,10" Background="#FF148886" Grid.Column="6" Grid.Row="3" Click="bLetterClick"/>
+            <Button x:Name="bM" Content="m" Margin="8,10" Background="#FF148886" Grid.Column="7" Grid.Row="3" Click="bLetterClick"/>
+            <Button x:Name="bComma" Content="," Margin="8,10" Background="#FF148886" Grid.Column="8" Grid.Row="3" Click="bLetterClick"/>
+            <Button x:Name="bDot" Content="." Margin="8,10" Background="#FF148886" Grid.Column="9" Grid.Row="3" Click="bLetterClick"/>
+            <Button x:Name="bHyphen" Content="-" Margin="8,10" Background="#FF148886" Grid.Column="10" Grid.Row="3" Click="bLetterClick"/>
 
             <!-- Fila 5 -->
-
-
+            <Button x:Name="bNumIzq" Content=".?123" Margin="8,10,8,10" Background="#FF148886" Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="2" Click="bNum_Click"/>
+            <Button Content="Ctrl" Margin="8,10" Background="#FF148886" Grid.Column="2" Grid.Row="4"/>
+            <Button x:Name="bSpace" Content="" Margin="8,10,8,10" Background="#FF148886" Grid.Column="3" Grid.Row="4" Grid.ColumnSpan="5"/>
+            <Button Content="Alt" Margin="8,10" Background="#FF148886" Grid.Column="8" Grid.Row="4"/>
+            <Button x:Name="bNumDer" Content=".?123" Margin="8,10,8,10" Background="#FF148886" Grid.Column="9" Grid.Row="4" Grid.ColumnSpan="2" Click="bNum_Click"/>
         </Grid>
     </Grid>
 </Window>
